@@ -12,14 +12,15 @@ impl DisplayGUI{
     }
 }
 
-
 impl eframe::App for DisplayGUI{
     fn ui(&mut self, ui: &mut egui::Ui, frame: &mut eframe::Frame){
         egui::CentralPanel::default().show(ui, |ui| {
             ui.heading("Hello World!");
             ui.label("App1");
+            // TODO: Each button should only pass the application name
+            // Everything else will be sorted further down the line.
             if ui.button("Start").clicked(){
-                check_for_file("src/applications");
+                check_for_file("src/applications/app1_dir/dummy_app.txt");
             }
         });
     }

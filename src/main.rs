@@ -2,7 +2,7 @@ mod display_hub;
 mod download;
 pub mod file_exists;
 pub mod update_manager;
-
+// TODO: Keep it CLEAN.
 fn main() {
     // Window name/options
     let window_name = "Hub";
